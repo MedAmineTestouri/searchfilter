@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Row ,Col } from "react-bootstrap";
 
 export const HookuseEffect = () =>{
   const [users,setUsers] = useState([])
@@ -34,12 +35,20 @@ useEffect(()=>{
 
   return (
     <div>
-        <input type='text' className='search' onInput={handleChange}/>
+    <Row>
+      <Col >
+     <h4  >Search for Name :</h4> 
+      </Col>
+      
+      <Col >
+        <input type='text' className='Search'  onInput={handleChange}/>
         {
             fitredUsers.map (
-                user=><h3 key = {user.id}>{user.name}</h3>
+                user=><h3  key = {user.id}>{user.name}</h3>
             )
         }
+        </Col>
+    </Row>
     </div>
   )
 }

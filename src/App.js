@@ -1,5 +1,6 @@
-import { HookuseEffect } from "./useEffect/Hook.useEffect";
+import { HookuseEffect } from "./useEffect/HookUseEffect";
 import './App.css';
+import SearchBarcomp from "./component/SearchBar.comp";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <div className="App">
         
         <HookuseEffect/>
+        
       </div>
  
   );

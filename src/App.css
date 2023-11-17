@@ -4,4 +4,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Lato', sans-serif;
+    
+}
+input{
+  border-radius: 5px;
+  height: 2rem;
+  width: 20rem;
+  background-color: #9EB8D9;
+  
+}
+input:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
 }
